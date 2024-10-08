@@ -1,0 +1,32 @@
+const numero1 = 10;
+const numero2 = 70;
+
+const soma = numero1 +numero2;
+const multiplicacao = numero1 * numero2;
+const divisao = numero1 / numero2;
+
+console.log ('o resultado da soma é '+ '' + soma);
+console.log ('o resultado da multiplicação é'+' '+ divisao);
+console.log ('o resultadoda divisão é' +' '+ divisao);
+console.log ('o resultado da suntração é' +''+ subtração);
+
+const idade = 47;
+const name = "Guarani"
+const cidade = "olinda"
+
+console.log ("olá, meu nome é " + [nome]  + " e tenho " + [idade]);
+
+const base = 30 
+const altura = 20 
+const area = base * altura / 2
+
+console.log ('A área do triangolo é ' + area)*/
+
+const nota1 = 8;
+const nota2 = 10;
+const nota3 = 5;
+const media = nota1 + nota2 + nota3 /3; 
+
+
+const celsius =28
+const fahrenheit = (celsius * 9/5) + 32
