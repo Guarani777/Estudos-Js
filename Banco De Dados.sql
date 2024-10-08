@@ -141,3 +141,4 @@ FROM cliente c
 JOIN vendas v ON c.id_cliente = v.id_cLiente
 GROUP BY c.id_cliente, c.nome
 ORDER BY total_comprado DESC;
+---------------------------------
