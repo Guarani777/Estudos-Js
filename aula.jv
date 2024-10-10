@@ -30,3 +30,36 @@ const media = nota1 + nota2 + nota3 /3;
 
 const celsius =28
 const fahrenheit = (celsius * 9/5) + 32
+=======================================================================================================
+                   10/10/2024
+
+function atendimentoSaude() {
+    alert("Bem-vindo ao Sistema de Triagem Médica!");
+
+    // Perguntas sobre os sintomas
+    let febre = prompt("Você está com febre? (sim/não)").toLowerCase().trim();
+    let tosse = prompt("Você está com tosse? (sim/não)").toLowerCase().trim();
+    let faltaAr = prompt("Você está com falta de ar? (sim/não)").toLowerCase().trim();
+    let dorCorpo = prompt("Você está com dores no corpo? (sim/não)").toLowerCase().trim();
+    let dorCabeca = prompt("Você está com dor de cabeça? (sim/não)").toLowerCase().trim();
+
+    // Avaliação com base nos sintomas
+    if (febre === "sim" && tosse === "sim" && faltaAr === "sim") {
+        alert("Alerta! Seus sintomas podem ser graves. Procure atendimento médico imediato.");
+    } 
+    else if (febre === "sim" && (tosse === "sim" || dorCabeca === "sim")) {
+        alert("Você apresenta sintomas moderados. Recomendamos repouso e observação. Se os sintomas piorarem, procure um médico.");
+    } 
+    else if (dorCorpo === "sim" && dorCabeca === "sim" && febre === "não") {
+        alert("Parece que você está com sintomas leves. Recomendamos descanso e hidratação.");
+    } 
+    else if (tosse === "sim" && febre === "não" && faltaAr === "não") {
+        alert("Provavelmente uma irritação respiratória leve. Monitore os sintomas e evite ambientes frios.");
+    } 
+    else {
+        alert("Seus sintomas não parecem graves. Continue monitorando sua saúde, e se algo mudar, procure ajuda médica.");
+    }
+}
+
+// Chamar a função de atendimento
+atendimentoSaude();
