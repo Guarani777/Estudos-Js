@@ -63,3 +63,27 @@ function atendimentoSaude() {
 
 // Chamar a função de atendimento
 atendimentoSaude();
+--------------------------------------------------------------------------------------------------//////////////////--------------------------------------------------------------------------------------------------
+                      16/10/2024 
+
+
+// Criação do array de frutas
+let frutas = ["Banana", "Maçã", "Laranja", "Manga"];
+
+// Mostrar o array inicial
+console.log("Frutas no estoque:", frutas);
+
+// Remover a última fruta
+let frutaRemovida = frutas.pop();
+console.log("Fruta removida:", frutaRemovida);
+console.log("Estoque atualizado:", frutas);
+
+// Adicionar uma nova fruta ao final
+let novaFruta = prompt("Digite o nome de uma nova fruta para adicionar:");
+frutas.push(novaFruta);
+console.log("Fruta adicionada:", novaFruta);
+console.log("Estoque atualizado:", frutas);
+
+// Mostrar o número total de frutas
+console.log("Número total de frutas no estoque:", frutas.length);
+
